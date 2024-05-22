@@ -22,7 +22,7 @@ bash script/llama_prune.sh
 This script would compress the LLaMA-7B model with 70\% parameters pruned using our wanda_ww method. All the pre-trained models and the dataset would be automatically downloaded, so you do not need to manually download the resource. When running this script for the first time, it will require some time to download the model and the dataset.
 
 --- 
-### Script example of pruning llama2-7b using Magnitude-based pruning with our layer-wise pruning ratio
+### Script example of pruning LLaMA-V1-7b using Magnitude-based pruning with our layer-wise pruning ratio
 ```
 python   main.py    \
 --model pinkmanlove/llama-7b-hf    \
@@ -33,7 +33,7 @@ python   main.py    \
 --epsilon 0.3 \
 ```
 
-### Script example of pruning llama2-7b using Wanda with our layer-wise pruning ratio
+### Script example of pruning LLaMA-V1-7b using Wanda with our layer-wise pruning ratio
 ```
 python   main.py    \
 --model pinkmanlove/llama-7b-hf     \
@@ -44,7 +44,7 @@ python   main.py    \
 --epsilon 0.2 \
 ```
 
-### Script example of pruning llama2-7b using SparseGPT with our layer-wise pruning ratio
+### Script example of pruning LLaMA-V1-7b using SparseGPT with our layer-wise pruning ratio
 ```
 python   main.py    \
 --model pinkmanlove/llama-7b-hf  \
@@ -54,7 +54,7 @@ python   main.py    \
 --save save_test/ \
 --epsilon 0.2 \
 ```
-
+###  To prune more LLMs, you can change the "model" arguments in the script.
 
 ## Usage
 We provide a quick overview of the arguments:  
